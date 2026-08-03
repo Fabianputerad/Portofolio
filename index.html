@@ -1,20 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/style.css">
-    <title>Personal Website</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <title>Mixue Portfolio</title>
   </head>
   <body>
     <header>
-      <h1>Personal Website</h1>
+      <a class="brand" href="#profile">Mixue Portfolio</a>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </header>
 
     <main>
       <div id="profile">
-        <img src="assets/img/Mixue.jpg" alt="Profile" />
+        <div class="hero-copy">
+          <p class="eyebrow">Personal Website</p>
+          <h1>Hai, saya Mixue.</h1>
+          <p>
+            Website portfolio sederhana untuk memperkenalkan profil, skill, dan
+            cara terhubung dengan saya.
+          </p>
+          <a class="button" href="#contact">Hubungi Saya</a>
+        </div>
+        <div class="portrait-wrap">
+          <img src="assets/img/Mixue.jpg" alt="Profile" />
+        </div>
       </div>
 
       <div id="content">
@@ -37,9 +53,11 @@
           </p>
         </section>
 
-        <hr />
-
         <section id="skills">
+          <div class="section-heading">
+            <p class="eyebrow">What I Do</p>
+            <h2>Skills</h2>
+          </div>
           <div class="card" onclick="handleClick(0)">
             <img src="assets/img/image-1.jpeg" alt="Programming" />
             <div>
@@ -72,21 +90,19 @@
           </div>
         </section>
 
-        <hr />
-
         <section id="contact">
-          <h1>Contact Me</h1>
+          <h2>Contact Me</h2>
 
           <p>
             For more info please contact me at:
-            <a href="hello@ajaib.co.id">hello@ajaib.co.id</a>
+            <a href="mailto:hello@ajaib.co.id">hello@ajaib.co.id</a>
           </p>
         </section>
       </div>
 
       <div id="modal">
         <div id="modal-content">
-          <div id="close" title="close" onclick="handleClose()">x</div>
+          <button id="close" title="close" type="button" onclick="handleClose()">x</button>
           <h1 id="title"></h1>
           <div id="image"></div>
           <h3>Detail</h3>
@@ -98,18 +114,10 @@
     </main>
 
     <footer>
-      <a href="https://www.instagram.com"
-        ><img src="assets/img/instagram.png" alt="Instagram"
-      /></a>
-      <a href="https://www.facebook.com"
-        ><img src="assets/img/facebook.png" alt="Facebook"
-      /></a>
-      <a href="https://www.twitter.com"
-        ><img src="assets/img/twitter.png" alt="Twitter"
-      /></a>
-      <a href="https://www.linkedin.com"
-        ><img src="assets/img/linkedin.png" alt="LinkedIn"
-      /></a>
+      <a href="https://www.instagram.com">Instagram</a>
+      <a href="https://www.facebook.com">Facebook</a>
+      <a href="https://www.twitter.com">Twitter</a>
+      <a href="https://www.linkedin.com">LinkedIn</a>
     </footer>
 
     <script type="text/javascript" src="assets/script.js"></script>
