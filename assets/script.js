@@ -39,31 +39,31 @@ window.addEventListener('load', function() {
     },
     {
       title: 'cbn.id',
-      image: 'assets/img/image-1.jpeg',
+      image: 'assets/img/project-cbn-website.png',
       detail: 'Customer-facing website for CBN',
       description: 'Developed and optimized the cbn.id website by implementing new features to improve the digital customer experience using Next.js, Flutter, and Go across related CBN platforms.'
     },
     {
       title: 'diCBN Mobile App',
-      image: 'assets/img/image-2.jpeg',
+      image: 'assets/img/project-dicbn-mobile.png',
       detail: 'Mobile app for CBN customers',
       description: 'Contributed to the development and optimization of the diCBN mobile application, helping enhance customer-facing digital services with Flutter and supporting backend systems.'
     },
     {
       title: 'LingoPal',
-      image: 'assets/img/image-3.jpeg',
+      image: 'assets/img/project-lingopal.jpeg',
       detail: 'AI-powered English learning app',
       description: 'Designed and developed as a thesis project using Azure AI, LLMs, and NLP to support AI-assisted conversations and personalized English-learning feedback.'
     },
     {
       title: 'CBN Championship',
-      image: 'assets/img/image-1.jpeg',
+      image: 'assets/img/project-cbn-championship.png',
       detail: 'Gaming tournament microsite',
       description: 'Built a centralized platform for the CBN gaming community, including online tournament registration, announcements, schedules, and results.'
     },
     {
       title: 'Office Management System',
-      image: 'assets/img/image-2.jpeg',
+      image: 'assets/img/project-oms.png',
       detail: 'Tablet-based office operations app',
       description: 'Created an OMS application using Flutter with Clean Architecture and GetX for visitor management and vehicle logging/tracking workflows.'
     },

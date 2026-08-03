@@ -123,12 +123,6 @@ h3 {
   font-size: 1.12rem;
 }
 
-.hero-copy p:not(.eyebrow) {
-  max-width: 520px;
-  color: var(--muted);
-  font-size: 1.08rem;
-}
-
 .button {
   display: inline-flex;
   align-items: center;
@@ -143,6 +137,44 @@ h3 {
   padding: 0 22px;
   text-decoration: none;
   transition: 180ms ease;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  max-width: 620px;
+  margin-top: 6px;
+}
+
+.tech-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  min-height: 50px;
+  border: 1px solid rgba(23, 32, 51, 0.1);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 10px 24px rgba(23, 32, 51, 0.08);
+  color: var(--text);
+  font-size: 0.98rem;
+  font-weight: 800;
+  padding: 7px 16px 7px 11px;
+}
+
+.tech-badge img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.tech-badge img[src*="tech-mysql"] {
+  width: 52px;
+  height: 32px;
+}
+
+.tech-badge img[src*="tech-nextjs"] {
+  border-radius: 50%;
 }
 
 .button:hover {
@@ -265,6 +297,11 @@ section {
   scroll-snap-align: start;
 }
 
+.project-slider .card img {
+  background: #f8fbff;
+  object-fit: contain;
+}
+
 .card {
   overflow: hidden;
   min-height: 100%;
@@ -348,9 +385,10 @@ footer {
 
 #image img {
   width: 100%;
-  max-height: 260px;
+  max-height: 420px;
   border-radius: 8px;
-  object-fit: cover;
+  background: #f8fbff;
+  object-fit: contain;
 }
 
 #image:empty {
