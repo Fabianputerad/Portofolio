@@ -4,10 +4,10 @@
 window.addEventListener('load', function() {
     if (window.localStorage.getItem('onboarded') != 1) {
       document.getElementById('modal').style.display = 'block';
-      document.getElementById('title').textContent = 'Hello World!';
+      document.getElementById('title').textContent = 'Welcome!';
       document.getElementById('image').innerHTML = '';
-      document.getElementById('detail').textContent = 'Welcome to My Personal Website';
-      document.getElementById('description').textContent = 'Here you can see my latest project and portfolio';
+      document.getElementById('detail').textContent = 'Fabian Putera Djaja Portfolio';
+      document.getElementById('description').textContent = 'Here you can see my skills, selected projects, and contact information.';
       window.localStorage.setItem('onboarded', 1);
     } else {
       console.log('not show modal');
@@ -20,22 +20,52 @@ window.addEventListener('load', function() {
   
   const listSkills = [
     {
-      title: 'Programming',
+      title: 'Full-stack Development',
       image: 'assets/img/image-1.jpeg',
-      detail: 'About Programming',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ab numquam quisquam veritatis minima iusto!'
+      detail: 'Next.js, Go, PostgreSQL, Git, Docker',
+      description: 'Develops and optimizes websites, CRM, CMS, and internal business systems. Experienced in translating business requirements into practical technical solutions.'
     },
     {
-      title: 'Communication',
+      title: 'Mobile Development',
       image: 'assets/img/image-2.jpeg',
-      detail: 'About Communication',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ab numquam quisquam veritatis minima iusto!'
+      detail: 'Flutter, Clean Architecture, GetX',
+      description: 'Builds mobile and tablet applications, including an Office Management System with visitor management, employee/non-employee flows, and vehicle logging.'
     },
     {
-      title: 'Design',
+      title: 'Leadership',
       image: 'assets/img/image-3.jpeg',
-      detail: 'About Design',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ab numquam quisquam veritatis minima iusto!'
+      detail: 'Sprint planning, task allocation, technical guidance',
+      description: 'Leads development teams by coordinating sprints, distributing workload fairly, guiding technical decisions, and collaborating with users and management.'
+    },
+    {
+      title: 'cbn.id',
+      image: 'assets/img/image-1.jpeg',
+      detail: 'Customer-facing website for CBN',
+      description: 'Developed and optimized the cbn.id website by implementing new features to improve the digital customer experience using Next.js, Flutter, and Go across related CBN platforms.'
+    },
+    {
+      title: 'diCBN Mobile App',
+      image: 'assets/img/image-2.jpeg',
+      detail: 'Mobile app for CBN customers',
+      description: 'Contributed to the development and optimization of the diCBN mobile application, helping enhance customer-facing digital services with Flutter and supporting backend systems.'
+    },
+    {
+      title: 'LingoPal',
+      image: 'assets/img/image-3.jpeg',
+      detail: 'AI-powered English learning app',
+      description: 'Designed and developed as a thesis project using Azure AI, LLMs, and NLP to support AI-assisted conversations and personalized English-learning feedback.'
+    },
+    {
+      title: 'CBN Championship',
+      image: 'assets/img/image-1.jpeg',
+      detail: 'Gaming tournament microsite',
+      description: 'Built a centralized platform for the CBN gaming community, including online tournament registration, announcements, schedules, and results.'
+    },
+    {
+      title: 'Office Management System',
+      image: 'assets/img/image-2.jpeg',
+      detail: 'Tablet-based office operations app',
+      description: 'Created an OMS application using Flutter with Clean Architecture and GetX for visitor management and vehicle logging/tracking workflows.'
     },
   ];
   
@@ -58,3 +88,15 @@ window.addEventListener('load', function() {
       handleClose();
     }
   });
+
+  function slideProjects(direction) {
+    const slider = document.getElementById('projectSlider');
+    const card = slider.querySelector('.card');
+    const gap = 22;
+    const distance = card.offsetWidth + gap;
+
+    slider.scrollBy({
+      left: direction * distance,
+      behavior: 'smooth'
+    });
+  }

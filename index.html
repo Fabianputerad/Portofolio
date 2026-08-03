@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/style.css" />
-    <title>Mixue Portfolio</title>
+    <title>Fabian Putera Djaja Portfolio</title>
   </head>
   <body>
     <header>
-      <a class="brand" href="#profile">Mixue Portfolio</a>
+      <a class="brand" href="#profile">Fabian Putera Djaja</a>
       <nav aria-label="Main navigation">
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
@@ -21,15 +22,15 @@
       <div id="profile">
         <div class="hero-copy">
           <p class="eyebrow">Personal Website</p>
-          <h1>Hai, saya Mixue.</h1>
+          <h1>Hai, saya Fabian.</h1>
           <p>
-            Website portfolio sederhana untuk memperkenalkan profil, skill, dan
-            cara terhubung dengan saya.
+            Software Engineer dengan pengalaman full-stack dan mobile
+            development menggunakan Flutter, Next.js, dan Go.
           </p>
           <a class="button" href="#contact">Hubungi Saya</a>
         </div>
         <div class="portrait-wrap">
-          <img src="assets/img/Mixue.jpg" alt="Profile" />
+          <img src="assets/img/fabian-profile.png" alt="Fabian Putera Djaja" />
         </div>
       </div>
 
@@ -38,18 +39,16 @@
           <h2>About Me</h2>
 
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex,
-            laudantium, eos natus recusandae architecto voluptates mollitia
-            quisquam illum magni soluta aspernatur est qui molestiae reiciendis
-            explicabo fuga nisi alias temporibus enim illo voluptatem incidunt
-            fugiat. Et ea impedit reprehenderit totam vel iusto architecto
-            saepe. Architecto deserunt aperiam quo aut excepturi!
+            Saya adalah Software Engineer yang berpengalaman membangun aplikasi
+            customer-facing, sistem internal bisnis, website, dan aplikasi
+            mobile. Saya terbiasa bekerja dengan user dan manajemen untuk
+            menerjemahkan kebutuhan bisnis menjadi solusi teknis yang berdampak.
           </p>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi
-            a ad nobis corporis fugit voluptas reprehenderit quibusdam. Autem
-            voluptates eum rem id non quos. Quibusdam alias repellat impedit
-            maiores voluptate at necessitatibus facilis deleniti possimus.
+            Saat ini saya bekerja sebagai Development Lead dan Fullstack
+            Developer di PT. Cyberindo Aditama, berfokus pada pengembangan
+            cbn.id, aplikasi diCBN, CRM, CMS, dan platform self-registration
+            untuk layanan CBN.
           </p>
         </section>
 
@@ -61,31 +60,97 @@
           <div class="card" onclick="handleClick(0)">
             <img src="assets/img/image-1.jpeg" alt="Programming" />
             <div>
-              <h3>Programming</h3>
+              <h3>Full-stack Development</h3>
               <span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptatem ab numquam quisquam veritatis minima iusto!
+                Membangun dan mengoptimalkan website, CRM, CMS, serta sistem
+                bisnis menggunakan Next.js, Go, PostgreSQL, Git, dan Docker.
               </span>
             </div>
           </div>
           <div class="card" onclick="handleClick(1)">
             <img src="assets/img/image-2.jpeg" alt="Communication" />
             <div>
-              <h3>Communication</h3>
+              <h3>Mobile Development</h3>
               <span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptatem ab numquam quisquam veritatis minima iusto!
+                Mengembangkan aplikasi mobile dengan Flutter, Clean
+                Architecture, dan GetX, termasuk aplikasi OMS untuk tablet.
               </span>
             </div>
           </div>
           <div class="card" onclick="handleClick(2)">
             <img src="assets/img/image-3.jpeg" alt="Design" />
             <div>
-              <h3>Design</h3>
+              <h3>Leadership</h3>
               <span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptatem ab numquam quisquam veritatis minima iusto!
+                Memimpin sprint planning, pembagian task, technical guidance,
+                dan menjaga kolaborasi tim agar delivery tetap stabil.
               </span>
+            </div>
+          </div>
+        </section>
+
+        <section id="projects">
+          <div class="section-top">
+            <div class="section-heading">
+              <p class="eyebrow">Selected Work</p>
+              <h2>Projects</h2>
+            </div>
+            <div class="slider-controls" aria-label="Project slider controls">
+              <button type="button" onclick="slideProjects(-1)" aria-label="Previous project">&lt;</button>
+              <button type="button" onclick="slideProjects(1)" aria-label="Next project">&gt;</button>
+            </div>
+          </div>
+          <div class="project-slider" id="projectSlider">
+            <div class="card" onclick="handleClick(3)">
+              <img src="assets/img/image-1.jpeg" alt="cbn.id" />
+              <div>
+                <h3>CBN Webisite (cbn.id)</h3>
+                <span>
+                  Website customer-facing CBN yang dikembangkan dan
+                  dioptimalkan dengan fitur baru untuk pengalaman digital
+                  pelanggan.
+                </span>
+              </div>
+            </div>
+            <div class="card" onclick="handleClick(4)">
+              <img src="assets/img/image-2.jpeg" alt="diCBN Mobile App" />
+              <div>
+                <h3>diCBN Mobile App</h3>
+                <span>
+                  Aplikasi mobile pelanggan CBN yang dikembangkan menggunakan
+                  Flutter untuk meningkatkan layanan digital pengguna.
+                </span>
+              </div>
+            </div>
+            <div class="card" onclick="handleClick(5)">
+              <img src="assets/img/image-3.jpeg" alt="LingoPal" />
+              <div>
+                <h3>LingoPal</h3>
+                <span>
+                  Aplikasi belajar Bahasa Inggris berbasis AI untuk thesis,
+                  menggunakan Azure AI, LLM, NLP, dan personalized feedback.
+                </span>
+              </div>
+            </div>
+            <div class="card" onclick="handleClick(6)">
+              <img src="assets/img/image-1.jpeg" alt="CBN Championship" />
+              <div>
+                <h3>CBN Championship</h3>
+                <span>
+                  Microsite komunitas gaming CBN untuk registrasi turnamen,
+                  pengumuman, jadwal, dan hasil pertandingan.
+                </span>
+              </div>
+            </div>
+            <div class="card" onclick="handleClick(7)">
+              <img src="assets/img/image-2.jpeg" alt="Office Management System" />
+              <div>
+                <h3>Office Management System</h3>
+                <span>
+                  Aplikasi tablet untuk visitor management serta pencatatan dan
+                  pelacakan kendaraan.
+                </span>
+              </div>
             </div>
           </div>
         </section>
@@ -95,7 +160,7 @@
 
           <p>
             For more info please contact me at:
-            <a href="mailto:hello@ajaib.co.id">hello@ajaib.co.id</a>
+            <a href="mailto:fabian.djaja@gmail.com">fabian.djaja@gmail.com</a>
           </p>
         </section>
       </div>
@@ -117,7 +182,7 @@
       <a href="https://www.instagram.com">Instagram</a>
       <a href="https://www.facebook.com">Facebook</a>
       <a href="https://www.twitter.com">Twitter</a>
-      <a href="https://www.linkedin.com">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/fabian-djaja">LinkedIn</a>
     </footer>
 
     <script type="text/javascript" src="assets/script.js"></script>
