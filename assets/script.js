@@ -20,22 +20,22 @@ window.addEventListener('load', function() {
   
   const listSkills = [
     {
-      title: 'Full-stack Development',
+      title: 'Language',
       image: 'assets/img/image-1.jpeg',
-      detail: 'Next.js, Go, PostgreSQL, Git, Docker',
-      description: 'Develops and optimizes websites, CRM, CMS, and internal business systems. Experienced in translating business requirements into practical technical solutions.'
+      detail: 'Indonesian, English',
+      description: 'Able to communicate in Indonesian and English for daily collaboration, documentation, and project coordination.'
     },
     {
-      title: 'Mobile Development',
+      title: 'Software',
       image: 'assets/img/image-2.jpeg',
-      detail: 'Flutter, Clean Architecture, GetX',
-      description: 'Builds mobile and tablet applications, including an Office Management System with visitor management, employee/non-employee flows, and vehicle logging.'
+      detail: 'Flutter, Go Language, DBeaver (PostgreSQL), Git (GitLab), Postman, VSCode, Docker, Microsoft Office, Open Project',
+      description: 'Experienced with development tools, database tools, version control, API testing, containerization, office productivity, and project planning software.'
     },
     {
-      title: 'Leadership',
+      title: 'Others',
       image: 'assets/img/image-3.jpeg',
-      detail: 'Sprint planning, task allocation, technical guidance',
-      description: 'Leads development teams by coordinating sprints, distributing workload fairly, guiding technical decisions, and collaborating with users and management.'
+      detail: 'Leadership, Time Management, Teamwork, Communication, Problem-Solving',
+      description: 'Strong soft skills for coordinating work, collaborating with teams, communicating clearly, and solving project challenges.'
     },
     {
       title: 'cbn.id',
